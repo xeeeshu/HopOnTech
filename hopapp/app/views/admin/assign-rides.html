@@ -1,0 +1,334 @@
+<div class="vd_content-section clearfix">
+	<div class="panel widget light-widget">
+		<div class="panel-body">
+			<div class="panel widget">
+				<div  class="panel-body table-responsive">
+					<div class="col-md-12">
+						<form action="admin/users_search" method="post">
+							<div class="col-md-4">
+								<label>Search name</label>
+								<input class="form-control" type="text" value="" name="email" placeholder='name or email'/>
+							</div>
+							<div class="col-md-4">
+								<label>Status</label>
+								<select class="form-control" name="is_active">
+									<option value="">Select</option>
+									<option   value="1">Active</option>
+									<option   value="0">DeActive</option>
+								</select>
+							</div>
+							<div class="col-md-1" style="margin-top:28px">
+								<input type="submit" value="search" class="btn btn-success"/>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="parentlist" class="">
+					<div class="panel-heading vd_bg-grey">
+						<h3 class="panel-title titlename"> <span class="menu-icon"> <i class="fa fa-tasks"></i> </span> Task Assign </h3>
+					</div>
+					<div  class="panel-body table-responsive">
+						<table id="parent" class="table table-hover display customFont">
+							<thead>
+								<tr>
+									<!--<th>#</th>-->
+									<!--<th>Avatar</th>-->
+									<th>Parent Name</th>
+									<th>Phone</th>
+									<th>Status</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>asad</td>
+									<td>955858985</td>
+									<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+									<td><span class="menu-action hiderow22"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal1" title="view" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a> </span></td>
+								</tr>
+								<tr>
+									<td>Francisco</td>
+									<td>61985332563</td>
+									<td><span id="span" class="label label-warning"
+										style="background-color:#f89c2c;color:white;">Deactive</span></td>
+										<td><span class="menu-action hiderow23"><a type="button" data-toggle="modal" data-target="#" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal1" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>12alperix12</td>
+										<td>255</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><span class="menu-action hiderow30"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>test</td>
+										<td>1553</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><span class="menu-action hiderow31"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>Hermes</td>
+										<td>08000732017</td>
+										<td><span id="span" class="label label-warning">Deactive</span></td>
+										<td><span class="menu-action hiderow32"><a type="button" data-toggle="modal" data-target="#" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal1" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>testedois</td>
+										<td>55515996402438</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><span class="menu-action hiderow34"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>danu</td>
+										<td>7667976</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><span class="menu-action hiderow38"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>jean11</td>
+										<td>0756334466</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><span class="menu-action hiderow40"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a><a type="button" data-toggle="modal" data-target="#myModal" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>ali hafid</td>
+										<td>0855222678910</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><span class="menu-action hiderow41"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+									<tr>
+										<td>Nestor</td>
+										<td>2291092886</td>
+										<td><span id="span" class="label label-success disabled" style="background-color:green;color:white;" >Active</span></td>
+										<td><span class="menu-action hiderow43"><a type="button" data-toggle="modal" data-target="#myModal" title="Task Assign" data-placement="top" class="btnaction btn menu-icon vd_bd-yellow vd_yellow"> <i class="fa fa-tasks"></i> </a> <a type="button" data-toggle="modal" data-target="#myModal" data-original-title="view" data-toggle="tooltip" data-placement="top" class="btnaction btn menu-icon vd_bd-green vd_green"> <i class="fa fa-eye"></i> </a></span></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<ul class="pagination"><li class="active"><a href="#">1</a></li><li><a href="admin/users/10">2</a></li><li><a href="admin/users/20">3</a></li><li><a href="admin/users/10">&raquo</a></li></ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-6">
+							<div id="myModal" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div class="panel-body">
+												<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">×</span>
+												</a>
+												<h3 class="mgbt-xs-20">Task Assign to Driver</h3>
+												<hr>
+												<form enctype="multipart/form-data" class="form-horizontal label-view" action="#" method="post" role="form" id="register-form">
+													<input type="hidden" value="33" name="user_id">
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label  col-md-4"><b>Parent Name</b></label>
+															<div id="first-name-input-wrapper" class="controls col-md-8">
+																<label class="control-label">Asad Khan</label>
+															</div>
+														</div>
+													</div>
+
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Mobile Number</b></label>
+															<div id="website-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">+380949255164</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Email</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">alihafidmenyapa@gmail.com</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Pickup Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">F-11 Markaz, Islamabad, Pakistan</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Drop Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">H-8/1, Islamabad Capital Territory</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Number Of Child</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">3</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>First Child</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">M Asghar</label>
+																<img id="myno_img" style="width: 100px;height: 100px" src="assets/img/avatar/no-image.jpg" alt="your image">
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Second Child If Any</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">M Ali</label>
+																<img id="myno_img" style="width: 100px;height: 100px" src="assets/img/avatar/no-image.jpg" alt="your image">
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Third Child If Any</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">M Aslam</label>
+																<img id="myno_img" style="width: 100px;height: 100px" src="assets/img/avatar/no-image.jpg" alt="your image">
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Driver Name</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<input type="text" placeholder="Driver Name" value="" class="width-120 required" name="driver" required="">
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12 text-center"> 
+														<button id="singlebutton" name="singlebutton" class="btn btn-success">Submit</button> 
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-6">
+							<div id="myModal1" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div class="panel-body">
+												<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">×</span>
+												</a>
+												<h3 class="mgbt-xs-20">View Parent Information</h3>
+												<hr>
+												<form enctype="multipart/form-data" class="form-horizontal label-view" action="#" method="post" role="form" id="register-form">
+													<input type="hidden" value="33" name="user_id">
+
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Cnic/Passport</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">32301-5347875-5</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Mobile Number</b></label>
+															<div id="website-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">+3339255164</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Phone Number</b></label>
+															<div id="website-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">+380949255164</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Email</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">asad@gmail.com</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Parent Type</b></label>
+															<div id="website-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">+380949255164</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">F-11 Markaz, Islamabad, Pakistan</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Alternate Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">I-8 Markaz, Islamabad, Pakistan</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Alternate Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">H-8/1, Islamabad Capital Territory</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Community</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">Muslim</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Number Of Child</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">3</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Parent Name</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">Asad Khan</label>
+																<img id="myno_img" style="width: 100px;height: 100px" src="assets/img/avatar/no-image.jpg" alt="your image">
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

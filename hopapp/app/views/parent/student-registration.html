@@ -1,0 +1,238 @@
+   <script type="text/javascript">
+
+    function StudentInfoNext(){
+        $('#StudentInfoDiv').addClass("element-hidden");
+        $('#StudentInfoNext').removeClass('element-hidden');
+
+    };
+    function studentInfoBack(){
+        $('#StudentInfoNext').addClass('element-hidden');
+        $('#StudentInfoDiv').removeClass("element-hidden");
+    };
+    function SdisableInfoNext(){
+        $('#StudentInfoNext').addClass("element-hidden");
+        $('#SdisableInfoNext').removeClass('element-hidden');
+    };
+    function SdisableInfoBack(){
+        $('#StudentInfoNext').removeClass("element-hidden");
+        $('#SdisableInfoNext').addClass('element-hidden');
+    }
+
+    function SchoolInfoNext(){
+        $('#SdisableInfoNext').addClass("element-hidden");
+        $('#SchoolInfoNext').removeClass('element-hidden');
+    };
+    function SchoolInfoBack(){
+        $('#SchoolInfoNext').addClass('element-hidden');
+        $('#SdisableInfoNext').removeClass("element-hidden");
+    }
+
+    function EquInfoNext(){
+        $('#SchoolInfoNext').addClass('element-hidden');
+        $('#EquInfoNext').removeClass('element-hidden');
+    };
+    function EquInfoBack(){
+        $('#SchoolInfoNext').removeClass('element-hidden');
+        $('#EquInfoNext').addClass('element-hidden');
+    };
+</script>
+<div class="vd_content-section clearfix">
+    <div class="panel widget light-widget">
+        <div class="panel-body">
+            <div class="panel widget">
+                <div class="panel-heading vd_bg-grey">
+                    <h3 class="panel-title titlename"> <span class="menu-icon"> <i class="fa fa-registered" aria-hidden="true"></i> </span>Student Registration</h3>
+                </div>
+                <div  class="panel-body table-responsive left">
+                    <form class="form-horizontal" action="" name="studentInfo" method="post">
+                        <div id="StudentInfoDiv">
+                           <h3>Personal Info</h3>
+                           <div class="form-group">
+                            <label class="control-label  col-md-3">First Name<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon "><span class="fa fa-user"></span></span>
+                                <input type="text" class="form-control" name="First_Name" id="datepicker" ng-model="student.First_Name"  placeholder="First Name " >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label  col-md-3">Middle Name<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon "><span class="fa fa-user"></span></span>
+                                <input type="text" class="form-control" name="Middle_Name" id="datepicker" ng-model="student.Middle_Name"  placeholder="Middle Name " >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label  col-md-3">Last Name<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon "><span class="fa fa-user"></span></span>
+                                <input type="text" class="form-control" name="Last_Name" id="datepicker" ng-model="student.Last_Name"  placeholder="Last Name " >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label  col-md-3">Nick Name<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon "><span class="fa fa-user-circle"></span></span>
+                                <input type="text" class="form-control" name="Nick_Name" id="Nick_Name" ng-model="student.Nick_Name"  placeholder="Student Age " >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label  col-md-3">DOB<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon "><span class="fa fa-calendar"></span></span>
+                                <input type="text" class="form-control" name="Student_Age" id="Student_Age" ng-model="student.Student_Age"  placeholder="Student Age " >
+                            </div>
+                        </div>
+                        <div class="form-group pull-right" style="margin-right:0px">
+                            <button class="btn vd_bg-green vd_white" type="submit" id="submit-register" onclick="StudentInfoNext()">Next</button>
+                        </div>
+                    </div>
+                    <div class="element-hidden" id="StudentInfoNext">
+                        <h3>Disability</h3>
+                        <div class="form-group">
+                            <label class="control-label  col-md-3">Disability<span class="vd_red">*</span></label>
+                            <div  class="controls col-md-9">
+                             <select style="height:38px;" id="status" name="status" onChange="changetextbox()">
+                              <option value="No">No</option>
+                              <option value="Yes">Yes</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="form-group" >
+                    <label class="control-label  col-md-3">Details<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <textarea name="status"  id="detail" disabled=""></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">  
+                        <div class="form-group" style="margin-left:160px">
+                            <button class="btn btn-primary vd_white" type="button" onclick="studentInfoBack()">Back</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">  
+                        <div class="form-group pull-right" style="margin-right: 0px;">
+                            <button class="btn vd_bg-green vd_white" type="button" onclick="SdisableInfoNext()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="element-hidden" id="SdisableInfoNext">
+                <h3>School Information</h3>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">School Name<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <input type="text" placeholder="School Name" value="" class="width-120 "  name="Student.Name" id=""  >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">City<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <input type="text" placeholder="City" value="" class="width-120 "  name="Student.School_City" id=""  >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">Postal Code<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <input type="text" placeholder="Postal Code" value="" class="width-120 "  name="Student.School_Postal_Code" id=""  >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">Phone<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <input type="text" placeholder="Phone" value="" class="width-120 "  name="Student.School_Contact" id="signature"  >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">  
+                        <div class="form-group" style="margin-left:160px">
+                            <button class="btn btn-primary vd_white" type="button" onclick="SdisableInfoBack()">Back</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">  
+                        <div class="form-group pull-right" style="margin-right: 0px;">
+                            <button class="btn vd_bg-green vd_white" type="button" onclick="SchoolInfoNext()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="element-hidden" id="SchoolInfoNext">
+                <h3>Equipment </h3>
+                <div class="form-group">
+                   <label class="control-label  col-md-3">Select <span class="vd_red">*</span></label>
+                   <div id="first-name-input-wrapper"  class="controls col-md-9">
+                    <div class="checkbox checkbox-success">
+                        <input id="checkbox1" type="checkbox" checked="">
+                        <label for="checkbox1">
+                            Booster Seat
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-success">
+                        <input id="checkbox2" type="checkbox">
+                        <label for="checkbox2">
+                            Car Seat
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-success">
+                        <input id="checkbox3" type="checkbox">
+                        <label for="checkbox3">
+                            Harness
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-success">
+                        <input id="checkbox4" type="checkbox">
+                        <label for="checkbox4">
+                            Buckle Guard
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">  
+                    <div class="form-group" style="margin-left:160px">
+                        <button class="btn btn-primary vd_white" type="button" onclick="SchoolInfoBack()">Back</button>
+                    </div>
+                </div>
+                <div class="col-md-6">  
+                    <div class="form-group pull-right" style="margin-right: 0px;">
+                        <button class="btn vd_bg-green vd_white" type="button" onclick="EquInfoNext()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="element-hidden" id="EquInfoNext">
+            <h3>Child Image </h3>
+            <div class="form-group">
+             <div class="main-img-preview">
+              <img class="thumbnail img-preview" src="assets/img/dummyProfile.png" title="Preview Logo">
+          </div>
+          <div class="input-group">
+              <input id="parentPicUpload" class="form-control fake-shadow" placeholder="Choose File" disabled="disabled">
+              <div class="input-group-btn">
+               <div class="uploadfile btn btn-danger fake-shadow" >
+                <span><i class="glyphicon glyphicon-upload"></i> Browse Picture</span>
+                <input id="logo-id" name=""  demo-file-model="myFile" type="file" file-read="userProfile" class="attachment_upload" required="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">  
+        <div class="form-group">
+            <button class="btn btn-primary vd_white" type="button" onclick="EquInfoBack()">Back</button>
+        </div>
+    </div>
+    <div class="col-md-6">  
+        <div class="form-group pull-right" style="margin-right: 0px;">
+            <button class="btn vd_bg-green vd_white" type="button" onclick="submita()">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>

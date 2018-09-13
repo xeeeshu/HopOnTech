@@ -1,0 +1,94 @@
+
+<script type="text/javascript">
+    var brand = document.getElementById('logo-id');
+    brand.className = 'attachment_upload';
+    brand.onchange = function() {
+        document.getElementById('consPicUpload').value = this.value.substring(12);
+    };
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+                $('.img-preview').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#logo-id").change(function() {
+        readURL(this);
+    }); 
+</script>
+<div class="vd_content-section clearfix">
+    <div class="panel widget light-widget">
+        <div class="panel-body">
+            <div class="panel widget">
+                <div class="panel-heading vd_bg-grey">
+                    <h3 class="panel-title titlename" style="color:#F9C30B"> <span class="menu-icon"> <i class="fa fa-dot-circle-o"></i> </span>change Image</h3>
+                </div>
+                <div class="panel-body table-responsive left">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-8 col-md-8 col-md-offset-2">
+                                <div class="form-group">
+                                   <div class="main-img-preview">
+                                      <img class="thumbnail img-preview" src="assets/img/dummyProfile1.png" title="Preview Logo">
+                                  </div>
+                                  <div class="input-group">
+                                      <input id="" class="form-control fake-shadow" placeholder="Choose File" disabled="disabled">
+                                      <div class="input-group-btn">
+                                         <div class="uploadfile btn btn-danger fake-shadow" >
+                                            <span><i class="glyphicon glyphicon-upload"></i> Browse Picture</span>
+                                            <input id="logo-id" name="logo" demo-file-model="myFile" file-read="userProfile" type="file" class="attachment_upload ng-isolate-scope" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-sm-8 col-sm-offset-2 mt-10 border-special">
+                            <button ng-click="updatePicture()" class="btn btn-primary">
+                                Update
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+                <div class="panel-heading vd_bg-grey">
+                    <h3 class="panel-title titlename" style="color:#F9C30B"> <span class="menu-icon"> <i class="fa fa-dot-circle-o"></i> </span>Change Password</h3>
+                </div>
+                <div class="panel-body table-responsive left">
+                    <form class="form-horizontal" action="#" method="post" id="register-form">
+                        <div class="form-group">
+                            <label class="control-label  col-md-4">Old Password<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon"><span class="fa fa-lock"></span></span>
+                                <input type="password" class="form-control" id="oldPassword" name="oldPassword"  placeholder="*******" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label  col-md-4">New Password<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon"><span class="fa fa-lock"></span></span>
+                                <input type="password" class="form-control" id="newPassword" name="newPassword"  placeholder="*******" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label  col-md-4">Confirm Password<span class="vd_red">*</span></label>
+                            <div class="input-group pb-modalreglog-input-group">
+                                <span class="input-group-addon"><span class="fa fa-lock"></span></span>
+                                <input type="password" class="form-control" id="cPassword" name="cPassword"  placeholder="*******" >
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-left:43px">
+                            <button ng-click="updatePass()" class="btn btn-primary">
+                                Update
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

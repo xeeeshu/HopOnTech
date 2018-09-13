@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="hopApp">
+<head>
+	<meta charset="utf-8" />
+	<title>School Van App</title>
+	<meta name="keywords" content="HTML5 Template, CSS3, All Purpose Admin Template, " />
+	<meta name="description" content="Responsive Admin Template for multipurpose use">
+	<meta name="author" content="Venmond">
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- MapBox api css -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+	<link rel="shortcut icon" href="assets/img/ico/favicon.ico">
+
+
+	<!-- CSS -->
+	<!-- Bootstrap & FontAwesome & Entypo CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if IE 7]><link type="text/css" rel="stylesheet" href="assets/css/font-awesome-ie7.min.css"><![endif]-->
+	<link href="assets/css/font-entypo.css" rel="stylesheet" type="text/css">
+
+	<!-- Fonts CSS -->
+	<link href="assets/css/fonts.css" rel="stylesheet" type="text/css">
+
+	<!-- Plugin CSS -->
+	<link href="assets/plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+
+	<link href="assets/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css">
+	
+	<!-- Theme CSS -->
+	<link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
+	<!-- Responsive CSS -->
+	<link href="assets/css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/custom/custom.css" rel="stylesheet" type="text/css">
+
+	<!-- Head SCRIPTS -->
+	<script type="text/javascript" src="assets/js/modernizr.js"></script>
+	<script type="text/javascript" src="assets/js/mobile-detect.min.js"></script>
+	<script type="text/javascript" src="assets/js/mobile-detect-modernizr.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/plugins/dataTables/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="assets/js/dataTables.editor.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='assets/plugins/jquery-ui/jquery-ui.custom.min.js'></script>
+	<script type="text/javascript" src="assets/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="assets/js/caroufredsel.js"></script>
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="assets/plugins/breakpoints/breakpoints.js"></script>
+	<script type="text/javascript" src="assets/plugins/dataTables/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="assets/plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/tagsInput/jquery.tagsinput.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/blockUI/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="assets/plugins/pnotify/js/jquery.pnotify.min.js"></script>
+	<script type="text/javascript" src="assets/js/theme.js"></script>
+	<script type="text/javascript" src="assets/custom/custom.js"></script>
+</head>
+<body  id="dashboard" class="full-layout  nav-right-hide nav-right-start-hide  nav-top-fixed      responsive    clearfix" data-active="dashboard " data-smooth-scrolling="1">
+	<div class="vd_body">
+		<!-- Header Start -->
+		<header class="header-1" id="header">
+			<div class="vd_top-menu-wrapper">
+				<div class="container ">
+					<div class="vd_top-nav vd_nav-width  ">
+						<div class="vd_panel-header">
+							<div class="logo">
+								<a href="http://192.168.100.49/hop/">
+									<img src="assets/img/photo/logo.png" width="120" height="30">
+								</a>
+							</div>
+							<div class="vd_panel-menu left-pos visible-sm visible-xs">
+								<span class="menu" data-action="toggle-navbar-left">
+									<i class="fa fa-ellipsis-v"></i>
+								</span>
+							</div>
+						</div>
+						<!-- vd_panel-header -->
+					</div>
+					<div class="vd_container">
+						<div class="row">
+							<div class="col-sm-8" id="top-menu-profile">
+								<a data-action="click-trigger" href="#">
+									<img src="{{authData.ProfilePicture}}" title="Click Me" class="img-circle pull-right user-img" width="40" height="40">
+								</a>
+								<div data-action="click-target" class="vd_mega-menu-content  width-xs-2  left-xs left-sm" style="display: none;">
+									<div class="child-menu">
+										<div class="content-list content-menu">
+											<ul class="list-wrapper pd-lr-10">
+												<li> <a href="http://192.168.100.49/hop/" > <div class="menu-icon"><i class=" fa fa-sign-out"></i></div>  <div class="menu-text">Sign Out</div> </a> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<h3 class="user-name">WelCome {{authData.Name}}</h3>
+							</div>	
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- container -->
+        </header>
+        <!-- Header Ends -->
+        <div class="content">
+        	<div class="container">
+        		<div class="vd_nav-width vd_navbar-tabs-menu vd_navbar-left" style="color:black;background-image:url('assets/img/avatar/bg.jpg')">
+        			<div class="navbar-menu clearfix">
+        				<h3 class="menu-title hide-nav-medium hide-nav-small"></h3>
+        				<div class="vd_menu">
+        					<ul>
+        						<li>
+        							<a style="color:black" ui-sref="map">
+        								<span class="menu-icon"><i class="fa fa-map-marker"></i></span> <span class="menu-text">Track Location</span>
+        							</a>
+        						</li>
+        						<li>
+        							<a style="color:black" href="#" ui-sref="user">
+        								<span class="menu-icon"><i class="fa fa-users"></i></span> <span class="menu-text" style="color:black">Parents</span>
+        							</a>
+        						</li>
+        						<li>
+        							<a style="color:black" href="#" ui-sref="driver">
+        								<span class="menu-icon"><i class="fa fa-user"></i></span>
+        								<span class="menu-text">Drivers</span>
+        							</a>
+        						</li>
+								<li>
+                                    <a style="color:black" ui-sref="assignrides">
+                                        <span class="menu-icon"><i class="fa fa-bus"></i></span>
+                                        <span class="menu-text">Assign Ride</span>
+                                    </a>
+                                </li>
+        						<li>
+        							<a style="color:black" ui-sref="rides">
+        								<span class="menu-icon"><i class="fa fa-taxi"></i></span>
+        								<span class="menu-text">Rides</span>
+        							</a>
+        						</li>
+        						<li>
+        							<a style="color:black" ui-sref="reports">
+        								<span class="menu-icon"><i class="fa fa-registered"></i></span>
+        								<span class="menu-text">Reported Students</span>
+        							</a>
+        						</li>
+        						<li>
+        							<li>
+        								<a style="color:black" ui-sref="setting">
+        									<span class="menu-icon"><i class="fa fa-gears"></i></span>
+        									<span class="menu-text">settings</span>
+        								</a>
+        							</li>
+        							<li>
+        								<a style="color:black" href="http://192.168.100.49/hop/">
+        									<span class="menu-icon"><i class="fa fa-sign-out"></i></span>
+        									<span class="menu-text">Logout</span>
+        								</a>
+        							</li>
+        						</ul>
+							<ul id="element-hidden">
+									<li>
+                                        <a  style="color:black" ui-sref="driverprofile">
+                                            <span class="menu-icon"><i class="fa fa-pencil-square-o"></i></span> 
+                                            <span class="menu-text">Update Profile</span>  
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  style="color:black" ui-sref="myrides">
+                                            <span class="menu-icon"><i class="fa fa-taxi"></i></span> 
+                                            <span class="menu-text">My Rides</span>  
+
+                                        </a>
+                                    </li>
+									<li>
+                                        <a  style="color:black" ui-sref="reportstudent">
+                                            <span class="menu-icon"><i class="fa fa-registered "></i></span> 
+                                            <span class="menu-text">Report Student</span>  
+
+                                        </a>
+                                    </li>
+									<li>
+                                        <a  style="color:black" ui-sref="vehiclechecklist">
+                                            <span class="menu-icon"><i class="fa fa-list-alt "></i></span> 
+                                            <span class="menu-text">vehicle Checklist</span>  
+
+                                        </a>
+                                    </li>
+                                        <li>
+                                            <a  style="color:black" ui-sref="setting">
+                                                <span class="menu-icon"><i class="fa fa-gears"></i></span> 
+                                                <span class="menu-text">settings</span>  
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a  style="color:black" href="http://192.168.100.49/hop/">
+                                                <span class="menu-icon"><i class="fa fa-sign-out"></i></span> 
+                                                <span class="menu-text">Logout</span>  
+
+                                            </a>
+                                        </li>
+                                    </ul>
+							<ul id="element-hidden">
+                                    <li>
+                                        <a  style="color:black" ui-sref="parentprofile">
+                                            <span class="menu-icon"><i class="fa fa-pencil-square-o"></i></span> 
+                                            <span class="menu-text">Update Profile</span>  
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  style="color:black" ui-sref="studentregistration">
+                                            <span class="menu-icon"><i class="fa fa-registered"></i></span> 
+                                            <span class="menu-text">Student Registration</span>  
+
+                                        </a>
+                                    </li>
+									<li>
+                                        <a  style="color:black" ui-sref="child">
+                                            <span class="menu-icon"><i class="fa fa-list"></i></span> 
+                                            <span class="menu-text">child</span>  
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  style="color:black" ui-sref="setting">
+                                                <span class="menu-icon"><i class="fa fa-gears"></i></span> 
+                                                <span class="menu-text">settings</span>  
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  style="color:black" href="http://192.168.100.49/hop/">
+                                                <span class="menu-icon"><i class="fa fa-sign-out"></i></span> 
+                                                <span class="menu-text">Logout</span>  
+
+                                         </a>
+                                    </li>
+                                </ul>
+        					</div>
+        				</div>
+        				<div class="navbar-spacing clearfix">
+        				</div>
+        			</div>
+        			<div class="vd_content-wrapper">
+        				<div class="vd_container">
+        					<div class="vd_content clearfix">
+        						<div class="vd_head-section clearfix">
+        							<div class="vd_panel-header">
+        								<div class="vd_panel-menu hidden-sm hidden-xs" data-intro="">
+        									<div data-action="remove-navbar" data-original-title="Remove Navigation Bar Toggle" data-toggle="tooltip" data-placement="bottom" class="remove-navbar-button menu"> <i class="fa fa-arrows-h"></i> </div>
+        									<div data-action="remove-header" data-original-title="Remove Top Menu Toggle" data-toggle="tooltip" data-placement="bottom" class="remove-header-button menu"> <i class="fa fa-arrows-v"></i> </div>
+        									<div data-action="fullscreen" data-original-title="Remove Navigation Bar and Top Menu Toggle" data-toggle="tooltip" data-placement="bottom" class="fullscreen-button menu"> <i class="glyphicon glyphicon-fullscreen"></i> </div>
+        								</div>
+        							</div>
+        						</div>
+        						<!-- Body Content Start-->
+        						<div ui-view></div>
+        						<!-- Body Content End-->
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<!-- Footer Start -->
+        	<footer class="footer-1" id="footer">
+        		<div class="vd_bottom ">
+        			<div class="container">
+        				<div class="row">
+        					<div class=" col-xs-12">
+        						<div class="copyright col-xs-10">
+        							Copyright &copy;2018 <a href="https://www.unicres.co.uk/"> Unicres Pvt Ltd</a>
+        						</div>
+        						<div class="col-sx-2">
+        							Hop On Technologies
+        						</div>
+        					</div>
+        				</div><!-- row -->
+        			</div><!-- container -->
+        		</div>
+        	</footer>
+        	<!-- Footer END -->
+        	<!-- .vd_body END  -->
+        	<a id="back-top" href="#" data-action="backtop" style="background: none repeat scroll 0 0 #F9C30B" class="vd_back-top visible"> <i class="fa  fa-angle-up"> </i></a>
+        </div>
+		<script type="text/javascript">
+        	function changetextbox()
+        	{
+        		if (document.getElementById("status").value === "No") {
+        			$('#detail').attr('disabled', true);
+        		} else {
+        			$('#detail').removeAttr('disabled');
+        		}
+        	}
+        </script>
+		
+        <script type="text/javascript" src="assets/js/angular.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.js"></script>
+		<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="assets/js/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="assets/js/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/controllers/parentCtrl.js"></script>
+        <script type="text/javascript" src="app/services/services.js"></script>
+        	</body>
+        	</html>

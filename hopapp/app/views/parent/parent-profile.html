@@ -1,0 +1,168 @@
+<script type="text/javascript">
+	/* Core Scripts */
+        	function personalInfo(){
+        		$('#PersonalInfoDiv').addClass("element-hidden");
+        		$('#PersonalInfoNext').removeClass('element-hidden');
+        	}
+        	function personalInfoBack(){
+        		$('#PersonalInfoDiv').removeClass("element-hidden");
+        		$('#PersonalInfoNext').addClass('element-hidden');
+        	}
+        	function addressInfo(){
+        		$('#PersonalInfoNext').addClass("element-hidden");
+        		$('#AddressInfoNext').removeClass('element-hidden');
+        	};
+        	function addressInfoBack(){
+        		$('#AddressInfoNext').addClass('element-hidden');
+        		$('#PersonalInfoNext').removeClass('element-hidden');
+        	};
+        </script>
+        <div class="vd_content-section clearfix">
+        	<div class="panel widget light-widget">
+        		<div class="panel-body">
+        			<div class="panel widget">
+        				<div class="panel-heading vd_bg-grey">
+        					<h3 class="panel-title titlename"> <span class="menu-icon"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> </span>Update Parent Profile</h3>
+        				</div>
+        				<div  class="panel-body table-responsive left">
+        					<form class="form-horizontal"  action="" method="post">
+        						<div id="PersonalInfoDiv">
+        							<h3>Personal Info</h3>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">First Name<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="First Name" value="" class="width-120 required"  name="fname">
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Middle Name<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Last Name" value="" class="width-120 required"  name="lname" >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Last Name<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Nick Name" value="" class="width-120 required"  name="nickname" >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Other Name<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Other Name" value="" class="width-120 required"  name="oname"  >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Phone<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Phone Number" value="" class="width-120 required"  name="pnumber"  >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Community<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Community" value="" class="width-120 required"  name="cummunity"  >
+        								</div>
+        							</div>
+        							<div class="form-group pull-right" style="margin-right:0px">
+        								<button class="btn vd_bg-green vd_white" onclick="personalInfo()" type="button" >Next</button>
+        							</div>
+        						</div>
+        						<div class="element-hidden" id="PersonalInfoNext">
+        							<h3>Address</h3>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Unit<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="unit" value="" class="width-120 required"  name="Unumber"  >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">House<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="House" value="" class="width-120 required"  name="hnumber"  >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">City<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="City" value="" class="width-120 required"  name="city"   >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Province<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Province" value="" class="width-120 required"  name="provincer"  >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Postal Code<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Postal Code" value="" class="width-120 required"  name="postalcode"  >
+        								</div>
+        							</div>
+        							<div class="row">
+        								<div class="col-md-6">	
+        									<div class="form-group" style="margin-left:160px">
+        										<button class="btn btn-primary vd_white" type="button" onclick="personalInfoBack()">Back</button>
+        									</div>
+        								</div>
+        								<div class="col-md-6">	
+        									<div class="form-group pull-right" style="margin-right: 0px;">
+        										<button class="btn vd_bg-green vd_white" type="button" onclick="addressInfo()">Next</button>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        						<div class="element-hidden" id="AddressInfoNext">
+        							<h3>Alternate Address</h3>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Unit<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Unit" value="" class="width-120 required"  name="aunit" >
+        								</div>
+        							</div>
+
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">House<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="House" value="" class="width-120 required"  name="ahouse"  >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">City<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="City" value="" class="width-120 required"  name="acity"  >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Province<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Province" value="" class="width-120 required"  name="aprovince"   >
+        								</div>
+        							</div>
+        							<div class="form-group">
+        								<label class="control-label  col-md-3">Postal Code<span class="vd_red">*</span></label>
+        								<div id="first-name-input-wrapper"  class="controls col-md-9">
+        									<input type="text" placeholder="Postal Code" value="" class="width-120 required"  name="apostalcode"   >
+        								</div>
+        							</div>
+        							<div class="row">
+        								<div class="col-md-6">	
+        									<div class="form-group" style="margin-left:160px">
+        										<button class="btn btn-primary vd_white" type="button" onclick="addressInfoBack()">Back</button>
+        									</div>
+        								</div>
+        								<div class="col-md-6">	
+        									<div class="form-group pull-right" style="margin-right: 0px;">
+        										<button class="btn vd_bg-green vd_white" type="button" onclick="submit()">Submit</button>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        					</form>
+
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>

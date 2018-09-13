@@ -1,0 +1,365 @@
+<script type="text/javascript">
+	function student(){
+		$('#parentlist').addClass('element-hidden');
+		$('#childlist').removeClass("element-hidden");
+	}
+	function parent(){
+		$('#childlist').addClass("element-hidden");
+		$('#parentlist').removeClass('element-hidden');
+	}
+</script>
+<div class="vd_content-section clearfix">
+	<div class="panel widget light-widget">
+		<div class="panel-body">
+			<div class="panel widget">
+				<div  class="panel-body table-responsive">
+					<div class="col-md-12">
+						<form action="admin/users_search" method="post">
+							<div class="col-md-4">
+								<label>Search name</label>
+								<input class="form-control" type="text" value="" name="email" placeholder='name or email'/>
+							</div>
+							<div class="col-md-4">
+								<label>Status</label>
+								<select class="form-control" name="is_active">
+									<option value="">Select</option>
+									<option   value="1">Active</option>
+									<option   value="0">DeActive</option>
+								</select>
+							</div>
+							<div class="col-md-1" style="margin-top:28px">
+								<input type="submit" value="search" class="btn btn-success"/>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="parentlist" class="btn-list">
+					<div class="panel-heading vd_bg-grey">
+						<h3 class="panel-title titlename"> <span class="menu-icon"> <i class="fa fa-list"></i> </span> Parent List <span class="pull-right"><a type="button" class="btn btn-xs " onclick="student()" style="background-color:#336688; color: #fff;">Child list</a></span></h3>
+					</div>
+					<div  class="panel-body table-responsive">
+						<table id="parent" class="table table-hover display customFont">
+							<thead>
+								<tr>
+									<!--<th>#</th>-->
+									<!--<th>Avatar</th>-->
+									<th>Parent Name</th>
+									<th>Phone</th>
+									<th>Status</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Asad Khan</td>
+									<td>955858985</td>
+									<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+									<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+								</tr>
+								<tr>
+									<td>Aslam Malik</td>
+									<td>61985332563</td>
+									<td><span id="span" class="label label-warning"
+										style="background-color:#f89c2c;color:white;">Deactive</span></td>
+										<td><a type="button" disabled class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Asad Khan</td>
+										<td>255</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Asad Khan</td>
+										<td>1553</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Asad Khan</td>
+										<td>08000732017</td>
+										<td><span id="span" class="label label-warning">Deactive</span></td>
+										<td><a type="button" disabled class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Asad Khan</td>
+										<td>55515996402438</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Asad Khan</td>
+										<td>7667976</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Asad Khan</td>
+										<td>0756334466</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Ali Gul</td>
+										<td>0855222678910</td>
+										<td><span id="span" class="label label-success" style="background-color:green;color:white;">Active</span></td>
+										<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+									<tr>
+										<td>Asad Khan</td>
+										<td>2291092886</td>
+										<td><span id="span" class="label label-success disabled" style="background-color:green;color:white;" >Active</span></td>
+										<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal1">View</a></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<ul class="pagination"><li class="active"><a href="#">1</a></li><li><a href="admin/users/10">2</a></li><li><a href="admin/users/20">3</a></li><li><a href="admin/users/10">&raquo</a></li></ul>
+						</div>
+					</div>
+					<div id="childlist" class="element-hidden btn-list">
+						<div class="panel-heading vd_bg-grey">
+							<h3 class="panel-title titlename"> <span class="menu-icon"> <i class="fa fa-list"></i> </span> Child List <span class="pull-right"><a type="button" class="btn btn-xs " onclick="parent()" style="background-color:#336688; color: #fff;">Parent List</a></span></h3>
+						</div>
+						<table id="child" class="table table-hover display customFont">
+							<thead>
+								<tr>
+									<!--<th>#</th>-->
+									<!--<th>Avatar</th>-->
+									<th>child Name</th>
+									<th>School Name</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>M Ali</td>
+									<td>Islamabad Convent School, Street no 55, F-8/4, Islamabad</td>	
+									<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+								</tr>
+								<tr>
+									<td>M Asghar</td>
+									<td>Beacon House School Systems sector H-8, Islamabad </td>
+									<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+								</tr>
+								<tr>
+									<td>M Aslam</td>
+									<td>Joan McDonald School, St. 8, sec. h-8/4, Islamabad</td>
+									<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+								</tr>
+								<tr>
+									<td>Waqar Ali</td>
+									<td>Roots International,F-7 – Islamabad</td>
+									<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+								</tr>
+								<tr>
+									<td>Ishaq Khan</td>
+									<td>City School System,H-8, Islamabad </td>
+									<td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+					<div class="row">
+						<div class="col-md-offset-6">
+							<div id="myModal1" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div class="panel-body">
+												<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">×</span>
+												</a>
+												<h3 class="mgbt-xs-20">View Parent Information</h3>
+												<hr>
+												<form enctype="multipart/form-data" class="form-horizontal label-view" action="#" method="post" role="form" id="register-form">
+													<input type="hidden" value="33" name="user_id">
+
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Cnic/Passport</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">32301-5347875-5</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Mobile Number</b></label>
+															<div id="website-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">+3339255164</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Phone Number</b></label>
+															<div id="website-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">+380949255164</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Email</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">asad@gmail.com</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Parent Type</b></label>
+															<div id="website-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">+380949255164</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">F-11 Markaz, Islamabad, Pakistan</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Alternate Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">I-8 Markaz, Islamabad, Pakistan</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Alternate Address</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">H-8/1, Islamabad Capital Territory</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Community</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">Muslim</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Number Of Child</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">3</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Parent Name</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">Asad Khan</label>
+																<img id="myno_img" style="width: 100px;height: 100px" src="assets/img/avatar/no-image.jpg" alt="your image">
+															</div>
+														</div>
+													</div>
+													<hr>
+													<div class="row">
+														<div class="col-md-12 text-center"> 
+															<button id="singlebutton" name="blockbutton" class="btn btn-danger">Bulock</button> 
+															<button id="singlebutton" name="verifybutton" class="btn btn-success">Verify</button> 
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-6">
+							<div id="myModal2" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div class="panel-body">
+												<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">×</span>
+												</a>
+												<h3 class="mgbt-xs-20">View Child Information</h3>
+												<hr>
+												<form enctype="multipart/form-data" class="form-horizontal label-view" action="#" method="post" role="form" id="register-form">
+													<input type="hidden" value="33" name="user_id">
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label  col-md-4"><b>Parent Name</b></label>
+															<div id="first-name-input-wrapper" class="controls col-md-8">
+																<label class="control-label">Asad Khan</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>School Name</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">Roots International</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>School Code</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">A126</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>School Addres</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">Roots International,F-7 – Islamabad</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Disability</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">deaf or hard of hearing</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Equipment Required</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">Buckle Guard</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12">
+															<label class="control-label col-md-4"><b>Child Name</b></label>
+															<div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+																<label class="control-label">M Ali</label>
+																<img id="myno_img" style="width: 100px;height: 100px" src="assets/img/avatar/no-image.jpg" alt="your image">
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

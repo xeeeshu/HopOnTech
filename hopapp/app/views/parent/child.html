@@ -1,0 +1,132 @@
+<div class="vd_content-section clearfix">
+    <div class="panel widget light-widget">
+        <div class="panel-body">
+            <div class="panel widget">
+                <div  class="panel-body table-responsive">
+                    <div class="col-md-12">
+                        <form action="admin/users_search" method="post">
+                            <div class="col-md-4">
+                                <label>Search name</label>
+                                <input class="form-control" type="text" value="" name="email" placeholder='name or email'/>
+                            </div>
+                            <div class="col-md-1" style="margin-top:28px">
+                                <input type="submit" value="search" class="btn btn-success"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="panel-heading vd_bg-grey">
+                    <h3 class="panel-title titlename"> <span class="menu-icon"> <i class="fa fa-list"></i> </span> Child List </h3>
+                </div>
+                <div  class="panel-body table-responsive">
+                    <table id="child" class="table table-hover display customFont">
+                        <thead>
+                            <tr>
+                                <th>child Name</th>
+                                <th>School Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>M Ali</td>
+                                <td>Islamabad Convent School, Street no 55, F-8/4, Islamabad.</td>	
+                                <td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>M Asghar</td>
+                                <td>Beacon House School Systems sector H-8, Islamabad </td>
+                                <td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>M Aslam</td>
+                                <td>Joan McDonald School, St. 8, sec. h-8/4, Islamabad</td>
+                                <td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Waqar Ali</td>
+                                <td>Roots International,F-7 – Islamabad</td>
+                                <td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ishaq Khan</td>
+                                <td>City School System,H-8, Islamabad </td>
+                                <td><a type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal2">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-md-offset-6">
+                            <div id="myModal2" class="modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="panel-body">
+                                                <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </a>
+                                                <h3 class="mgbt-xs-20">View Child Information</h3>
+                                                <hr>
+                                                <form enctype="multipart/form-data" class="form-horizontal" action="#" method="post" role="form" id="register-form">
+                                                    <input type="hidden" value="33" name="user_id">
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label  col-md-4"><b>Parent Name</b></label>
+                                                            <div id="first-name-input-wrapper" class="controls col-md-8">
+                                                                <label class="control-label">Asad Khan</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label col-md-4"><b>School Name</b></label>
+                                                            <div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+                                                                <label class="control-label">Roots International</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label col-md-4"><b>School Code</b></label>
+                                                            <div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+                                                                <label class="control-label">A126</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label col-md-4"><b>School Addres</b></label>
+                                                            <div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+                                                                <label class="control-label">Roots International,F-7 – Islamabad</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label col-md-4"><b>Disability</b></label>
+                                                            <div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+                                                                <label class="control-label">deaf or hard of hearing</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label col-md-4"><b>Equipment Required</b></label>
+                                                            <div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+                                                                <label class="control-label">Buckle Guard</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label col-md-4"><b>Child Name</b></label>
+                                                            <div id="email-input-wrapper" class="controls col-sm-6 col-md-8">
+                                                                <label class="control-label">M Ali</label>
+                                                                <img id="myno_img" style="width: 100px;height: 100px" src="assets/img/avatar/no-image.jpg" alt="your image">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>

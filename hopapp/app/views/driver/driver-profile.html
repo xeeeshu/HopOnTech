@@ -1,0 +1,420 @@
+<script type="text/javascript">
+      /* Core Scripts */
+
+            function DpersonalInfo(){
+                $('#DpersonalInfoDiv').addClass("element-hidden");
+                $('#DpersonalInfoNext').removeClass('element-hidden');
+            }
+            function DpersonalInfoBack(){
+                $('#DpersonalInfoDiv').removeClass("element-hidden");
+                $('#DpersonalInfoNext').addClass('element-hidden');
+            }
+            function VehicleInfo(){
+                $('#DpersonalInfoNext').addClass('element-hidden');
+                $('#VehicleInfoNext').removeClass('element-hidden');
+            }
+            function VehicleInfoBack(){
+                $('#DpersonalInfoNext').removeClass('element-hidden');
+                $('#VehicleInfoNext').addClass('element-hidden');
+            }
+            function DaddressInfo(){
+                $('#VehicleInfoNext').addClass('element-hidden');
+                $('#DaddressInfoNext').removeClass('element-hidden');
+            };
+            function DaddInfoBack(){
+                $('#VehicleInfoNext').removeClass('element-hidden');
+                $('#DaddressInfoNext').addClass('element-hidden');
+            };
+            function DcontactInfo(){
+                $('#DaddressInfoNext').addClass('element-hidden');
+                $('#DcontactInfoNext').removeClass('element-hidden');
+            };
+            function DcInfoBack(){
+                $('#DaddressInfoNext').removeClass('element-hidden');
+                $('#DcontactInfoNext').addClass('element-hidden');
+            };
+
+            function LicenseInfo(){
+                $('#DcontactInfoNext').addClass('element-hidden');
+                $('#LicenseInfoNext').removeClass('element-hidden');
+            };
+            function LicInfoBack(){
+                $('#DcontactInfoNext').removeClass('element-hidden');
+                $('#LicenseInfoNext').addClass('element-hidden');
+            };
+
+            function DetailsInfo(){
+                $('#LicenseInfoNext').addClass('element-hidden');
+                $('#DetailsInfoNext').removeClass('element-hidden');
+            };
+            function DetInfoBack(){
+                $('#LicenseInfoNext').removeClass('element-hidden');
+                $('#DetailsInfoNext').addClass('element-hidden');
+            };
+
+            function FirstAidInfo(){
+                $('#DetailsInfoNext').addClass('element-hidden');
+                $('#FirstAidInfoNext').removeClass('element-hidden');
+            }; 
+            function FirstAidInfoBack(){
+                $('#DetailsInfoNext').removeClass('element-hidden');
+                $('#FirstAidInfoNext').addClass('element-hidden');
+            }; 
+            function DrivingInfo(){
+                $('#FirstAidInfoNext').addClass('element-hidden');
+                $('#DrivingInfoNext').removeClass('element-hidden');
+            };
+            function DInfoBack(){
+                $('#FirstAidInfoNext').removeClass('element-hidden');
+                $('#DrivingInfoNext').addClass('element-hidden');
+            };
+
+        </script>
+
+<div class="vd_content-section clearfix">
+<div class="panel widget light-widget">
+    <div class="panel-body">
+        <div class="panel widget">
+            <div class="panel-heading vd_bg-grey">
+                <h3 class="panel-title titlename"> <span class="menu-icon"> <i class="fa fa-registered" aria-hidden="true"></i> </span>Driver Registration</h3>
+            </div>
+            <div  class="panel-body table-responsive left">
+                <form class="form-horizontal"  action="admin/settings" method="post" role="form" id="register-form">
+                   <div id="DpersonalInfoDiv">
+                       <h3>Personal Info</h3>
+                       <div class="form-group">
+                        <label class="control-label  col-md-3">First Name<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="First Name" value="" class="width-120 required"  name="fname"  required >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Middle Name<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Middle Name" value="" class="width-120 required"  name="nickname" required >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Last Name<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Last Name" value="" class="width-120 required"  name="lname" required >
+                        </div>
+                    </div>
+                    <div class="form-group pull-right" style="margin-right:0px">
+                        <button class="btn vd_bg-green vd_white" onclick="DpersonalInfo()" type="button" >Next</button>
+                    </div>
+                </div>
+                <div class="element-hidden" id="DpersonalInfoNext">
+                    <h3>Vehicle Info</h3>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Vehicel Type<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <select>
+                                <option value="">Select</option>
+                                <option value="Bus">Bus</option>
+                                <option value="Para">Para</option>
+                                <option value="Van">Van</option>
+                                <option value="Sedan" >Sedan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Vehicle No<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Vehicle No" value="" class="width-120 required"  name="postalcode" required >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">  
+                            <div class="form-group" style="margin-left:160px">
+                                <button class="btn btn-primary vd_white" type="button" onclick="DpersonalInfoBack()">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group pull-right" style="margin-right: 0px;">
+                                <button class="btn vd_bg-green vd_white" type="button" onclick="VehicleInfo()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element-hidden" id="VehicleInfoNext">
+                    <h3>Address</h3>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">City<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="City" value="" class="width-120 required"  name="city"  required >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Province<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Province" value="" class="width-120 required"  name="provincer" required >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Postal Code<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Postal Code" value="" class="width-120 required"  name="postalcode" required >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Postal Address<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Postal Address" value="" class="width-120 required"  name="postalcode" required >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">  
+                            <div class="form-group" style="margin-left:160px">
+                                <button class="btn btn-primary vd_white" type="button" onclick="VehicleInfoBack()">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group pull-right" style="margin-right: 0px;">
+                                <button class="btn vd_bg-green vd_white" type="button" onclick="DaddressInfo()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element-hidden" id="DaddressInfoNext">
+                    <h3>Contact Details</h3>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Phone<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Phone Number" value="" class="width-120 required"  name="pnumber"  >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Cell<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Cell" value="" class="width-120 required"  name="cnumber"  >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Emergency<span class="vd_red">*</span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Emergency" value="" class="width-120 required"  name="email"  >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">  
+                            <div class="form-group" style="margin-left:160px">
+                                <button class="btn btn-primary vd_white" type="button" onclick="DaddInfoBack()">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group pull-right" style="margin-right: 0px;">
+                                <button class="btn vd_bg-green vd_white" type="button" onclick="DcontactInfo()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element-hidden" id="DcontactInfoNext">
+                   <h3>License</h3>
+                   <div class="form-group">
+                    <label class="control-label  col-md-3">License No<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <input type="text" placeholder="License No" value="" class="width-120 required"  name="lnumber" required >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label  col-md-3">Issue Authority<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <input type="text" placeholder="Issue Authority" value="" class="width-120 required"  name="" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">Issue Date<span class="vd_red">*</span></label>
+                    <div  id="first-name-input-wrapper" class="controls col-md-9">
+                        <div class='input-group date' id='datetimepicker2'>
+                            <input type='Date' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">Expire Date<span class="vd_red">*</span></label>
+                    <div  id="first-name-input-wrapper" class="controls col-md-9">
+                        <div class='input-group date' id='datetimepicker2'>
+                            <input type='Date' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">Image<span class="vd_red">*</span></label>
+                    <div id="first-name-input-wrapper"  class="controls col-md-9">
+                        <input type="file" placeholder="Image" value="5" class="width-120 required" name="img"  >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">  
+                        <div class="form-group" style="margin-left:160px">
+                            <button class="btn btn-primary vd_white" type="button" onclick="DcInfoBack()">Back</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">  
+                        <div class="form-group pull-right" style="margin-right: 0px;">
+                            <button class="btn vd_bg-green vd_white" type="button" onclick="LicenseInfo()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="element-hidden" id="LicenseInfoNext">
+                <h3>Details</h3>
+                <div class="form-group">
+                    <label class="control-label  col-md-3">Police Criminal Record 
+                        If Any<span ></span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="file" placeholder="Police Criminal record" value="" class="width-120 required"  name="File"  required >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Medical Issue If Any<span ></span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <textarea cols="5" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Defense Driving Course If Completed<span ></span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <input type="text" placeholder="Defense Driving Course If Completed" value="" class="width-120 required"  name="acity"  required >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">  
+                            <div class="form-group" style="margin-left:160px">
+                                <button class="btn btn-primary vd_white" type="button" onclick="LicInfoBack()">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group pull-right" style="margin-right: 0px;">
+                                <button class="btn vd_bg-green vd_white" type="button" onclick="DetailsInfo()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element-hidden" id="DetailsInfoNext">
+                    <h3>First Aid CPR</h3>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Starting Date<span class="vd_red">*</span></label>
+                        <div  id="first-name-input-wrapper" class="controls col-md-9">
+                            <div class='input-group date' id='datetimepicker2'>
+                                <input type='Date' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Ending Date<span class="vd_red">*</span></label>
+                        <div  id="first-name-input-wrapper" class="controls col-md-9">
+                            <div class='input-group date' id='datetimepicker2'>
+                                <input type='Date' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">  
+                            <div class="form-group" style="margin-left:160px">
+                                <button class="btn btn-primary vd_white" type="button" onclick="DetInfoBack()">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group pull-right" style="margin-right: 0px;">
+                                <button class="btn vd_bg-green vd_white" type="button" onclick="FirstAidInfo()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element-hidden" id="FirstAidInfoNext">
+                    <h3>Driving Service</h3>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Start Date<span class="vd_red">*</span></label>
+                        <div  id="first-name-input-wrapper" class="controls col-md-9">
+                            <div class='input-group date' id='datetimepicker2'>
+                                <input type='Date' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">End Date<span class="vd_red">*</span></label>
+                        <div  id="first-name-input-wrapper" class="controls col-md-9">
+                            <div class='input-group date' id='datetimepicker2'>
+                                <input type='Date' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">  
+                            <div class="form-group" style="margin-left:160px">
+                                <button class="btn btn-primary vd_white" type="button" onclick="FirstAidInfoBack()">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group pull-right" style="margin-right: 0px;">
+                                <button class="btn vd_bg-green vd_white" type="button" onclick="DrivingInfo()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element-hidden" id="DrivingInfoNext" >
+                  <h3>Others</h3>
+                  <div class="form-group">
+                    <label class="control-label  col-md-3">Reason for service termination
+                        If Any<span ></span></label>
+                        <div  class="controls col-md-9" id="first-name-input-wrapper" >
+                            <input type="text" placeholder="Reason for service termination" value="" class="width-120 required"  name="text"  required >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Rating<span ></span></label>
+                        <div  class="controls col-md-9" id="first-name-input-wrapper" >
+                            <input type="text" id="input-2" name="input-2" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-md-3">Comment<span ></span></label>
+                        <div id="first-name-input-wrapper"  class="controls col-md-9">
+                            <textarea cols="5" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">  
+                            <div class="form-group" style="margin-left:160px">
+                                <button class="btn btn-primary vd_white" type="button" onclick="DInfoBack()">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="form-group pull-right" style="margin-right: 0px;">
+                                <button class="btn vd_bg-green vd_white" type="button" >Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>	
